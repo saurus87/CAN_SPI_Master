@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="4.7.2 -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=SPI_first.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\SPI_first -TC:\CooCox\CoIDE\configuration\ProgramData\SPI_first/arm-gcc-link.ld -g">
+      <target file="SPI_first.elf" lastModified="15dd114907e">
+         <source file="..\obj\stm32f1xx_hal_rcc_ex.o" lastModified="15dd11486a7"/>
+         <source file="..\obj\stm32f1xx_hal_pwr.o" lastModified="15dd1148725"/>
+         <source file="..\obj\stm32f1xx_hal.o" lastModified="15dd11487a3"/>
+         <source file="..\obj\stm32f1xx_it.o" lastModified="15dd114880c"/>
+         <source file="..\obj\stm32f1xx_hal_gpio_ex.o" lastModified="15dd1148870"/>
+         <source file="..\obj\stm32f1xx_hal_cortex.o" lastModified="15dd11488e9"/>
+         <source file="..\obj\system_stm32f1xx.o" lastModified="15dd1148931"/>
+         <source file="..\obj\stm32f1xx_hal_rcc.o" lastModified="15dd11489d3"/>
+         <source file="..\obj\startup_stm32f10x_md.o" lastModified="15dd1148a02"/>
+         <source file="..\obj\main.o" lastModified="15dd1148a67"/>
+         <source file="..\obj\stm32f1xx_hal_spi_ex.o" lastModified="15dd1148ac8"/>
+         <source file="..\obj\stm32f1xx_hal_flash.o" lastModified="15dd1148b3a"/>
+         <source file="..\obj\stm32f1xx_hal_gpio.o" lastModified="15dd1148ba8"/>
+         <source file="..\obj\stm32f1xx_hal_dma.o" lastModified="15dd1148c2b"/>
+         <source file="..\obj\stm32f1xx_hal_spi.o" lastModified="15dd1148cf6"/>
+         <source file="..\obj\stm32f1xx_hal_msp.o" lastModified="15dd1148d5b"/>
+         <source file="..\obj\stm32f1xx_hal_tim.o" lastModified="15dd1148db6"/>
+         <source file="..\obj\stm32f1xx_hal_flash_ex.o" lastModified="15dd1148e5a"/>
+         <source file="..\obj\stm32f1xx_hal_tim_ex.o" lastModified="15dd1148eb0"/>
+      </target>
+   </processor>
+</history>
