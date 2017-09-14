@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="4.7.2 -mcpu=cortex-m3 -mthumb -g -nostartfiles -Map=CAN_SPI_Master.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\CAN_SPI_Master -TC:\CooCox\CoIDE\configuration\ProgramData\CAN_SPI_Master/arm-gcc-link.ld -g">
+      <target file="CAN_SPI_Master.elf" lastModified="15e7b3bc3dd">
+         <source file="..\obj\stm32f1xx_hal_rcc_ex.o" lastModified="15e7b3bb943"/>
+         <source file="..\obj\stm32f1xx_hal_pwr.o" lastModified="15e7b3bb9c2"/>
+         <source file="..\obj\stm32f1xx_hal_can.o" lastModified="15e7b3bba68"/>
+         <source file="..\obj\stm32f1xx_hal.o" lastModified="15e7b3bbad3"/>
+         <source file="..\obj\stm32f1xx_it.o" lastModified="15e7b3bbb31"/>
+         <source file="..\obj\stm32f1xx_hal_gpio_ex.o" lastModified="15e7b3bbb8d"/>
+         <source file="..\obj\stm32f1xx_hal_cortex.o" lastModified="15e7b3bbc0a"/>
+         <source file="..\obj\system_stm32f1xx.o" lastModified="15e7b3bbc4f"/>
+         <source file="..\obj\stm32f1xx_hal_rcc.o" lastModified="15e7b3bbcf0"/>
+         <source file="..\obj\startup_stm32f10x_md.o" lastModified="15e7b3bbd1f"/>
+         <source file="..\obj\main.o" lastModified="15e7b3bbd88"/>
+         <source file="..\obj\stm32f1xx_hal_spi_ex.o" lastModified="15e7b3bbde8"/>
+         <source file="..\obj\stm32f1xx_hal_flash.o" lastModified="15e7b3bbe5b"/>
+         <source file="..\obj\stm32f1xx_hal_gpio.o" lastModified="15e7b3bbece"/>
+         <source file="..\obj\stm32f1xx_hal_dma.o" lastModified="15e7b3bbf6b"/>
+         <source file="..\obj\stm32f1xx_hal_spi.o" lastModified="15e7b3bc048"/>
+         <source file="..\obj\stm32f1xx_hal_msp.o" lastModified="15e7b3bc0b1"/>
+         <source file="..\obj\stm32f1xx_hal_tim.o" lastModified="15e7b3bc10a"/>
+         <source file="..\obj\stm32f1xx_hal_flash_ex.o" lastModified="15e7b3bc18a"/>
+         <source file="..\obj\stm32f1xx_hal_tim_ex.o" lastModified="15e7b3bc1e6"/>
+      </target>
+   </processor>
+</history>

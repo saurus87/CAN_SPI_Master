@@ -150,35 +150,6 @@ int main(void)
 
 */
 
-	  for (i=0;i<=7;i++){
-		  p_data[i]=&data_tranc[i];
-	  }
-
-	  uint32_t 	Test_StdId=1;
-	  uint32_t 	Test_ExtId=0;
-	  uint32_t	Test_IDE=0;
-	  uint32_t	Test_RTR=0;
-	  uint32_t	Test_DLC=8;
-	  uint8_t	Test_Data[8]={255,255,255,255,255,255,255,255};
-
-/*	  strcat(str_tx,(char*)Test_StdId);
-	  strcat(str_tx,(char*)Test_IDE);
-	  strcat(str_tx,(char*)Test_RTR);
-	  strcat(str_tx,(char*)Test_DLC);*/
-	  char tranc[100];
-	  itoa(Test_StdId,str_tx,2);
-	  strcat(tranc,str_tx);
-	  itoa(Test_IDE,str_tx,2);
-	  strcat(tranc,str_tx);
-	  itoa(Test_RTR,str_tx,2);
-	  strcat(tranc,str_tx);
-	  itoa(Test_DLC,str_tx,2);
-	  strcat(tranc,str_tx);
-	  for (i=0;i<=7;i++) {
-		  itoa(Test_Data[i],str_tx,2);
-		  strcat(tranc,str_tx);
-	  }
-
 	  HAL_Delay(5000);
 	  while (1){
 		  HAL_Delay(100);

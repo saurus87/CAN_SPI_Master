@@ -135,12 +135,12 @@ static int8_t CDC_Receive_FS  (uint8_t* pbuf, uint32_t *Len);
 uint8_t CDC_add_buf_to_transmit()
 {
 	uint32_t num_bytes;
-	uint8_t res;
+//	uint8_t res;
 
 	num_bytes = sprintf((char*)UserTxBufferFS,"t12381122334455667788\r");
 
 	USBD_CDC_SetTxBuffer(&hUsbDeviceFS, (uint8_t*)&UserTxBufferFS[0], num_bytes);
-	res = USBD_CDC_TransmitPacket(&hUsbDeviceFS) ;
+	/*res = */USBD_CDC_TransmitPacket(&hUsbDeviceFS) ;
 
 return(0);
 }
@@ -335,7 +335,7 @@ static int8_t CDC_Receive_FS (uint8_t* Buf, uint32_t *Len)
 		break ;
 */
 		default :
-			num_bytes = sprintf((char*)UserTxBufferFS,"t12381122334455667788\r");
+			num_bytes = sprintf((char*)UserTxBufferFS,"\r");
 		break ;
 	 }
 
