@@ -52,6 +52,7 @@ SPI_HandleTypeDef hspi1;
 /* Private variables ---------------------------------------------------------*/
 uint8_t can_rx_data[200];
 uint8_t can_tx_data[200];
+uint8_t can_to_spi_buffer[200];
 
 /* USER CODE END PV */
 
@@ -112,6 +113,8 @@ int main(void)
 
 	  HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,GPIO_PIN_SET);
 	  HAL_Delay(100);
+
+
 
   }
   /* USER CODE END 3 */
@@ -240,13 +243,29 @@ static void MX_GPIO_Init(void)
 /* USER CODE BEGIN 4 */
 void HAL_CAN_RxCpltCallback(CAN_HandleTypeDef *hcan)
 {
-/*	uint32_t num_bytes;
-	uint8_t buf[200];*/
+	uint32_t num_bytes = 0;
+	uint8_t buf[200];
+
+
 
 	if (hcan->pRxMsg->StdId == 1)
 	{
 		HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,GPIO_PIN_RESET);
 	}
+
+	buf[0] = (hcan->pRxMsg->StdId)>>8;
+	buf[1] = (hcan->pRxMsg->StdId);
+	buf[2] = (hcan->pRxMsg->DLC);
+	buf[3] = (hcan->pRxMsg->Data[0]);
+	buf[4] = (hcan->pRxMsg->Data[1]);
+	buf[5] = (hcan->pRxMsg->Data[2]);
+	buf[6] = (hcan->pRxMsg->Data[3]);
+	buf[7] = (hcan->pRxMsg->Data[4]);
+	buf[8] = (hcan->pRxMsg->Data[5]);
+	buf[9] = (hcan->pRxMsg->Data[6]);
+	buf[10] = (hcan->pRxMsg->Data[7]);
+
+	HAL_SPI_Transmit(&hspi1,(uint8_t*)buf,11,1000);
 
 }
 
