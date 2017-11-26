@@ -149,9 +149,9 @@
     <File name="Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h" path="Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usb.h" type="1"/>
     <File name="Src/usbd_desc.c" path="Src/usbd_desc.c" type="1"/>
     <File name="Drivers/STM32F1xx_HAL_Driver/Inc" path="" type="2"/>
-    <File name="SPI_USB/SPI_USB.elf.xcodeproj/project.pbxproj" path="SPI_USB/SPI_USB.elf.xcodeproj/project.pbxproj" type="1"/>
     <File name="Drivers/CMSIS/Include/arm_common_tables.h" path="Drivers/CMSIS/Include/arm_common_tables.h" type="1"/>
     <File name="SPI_USB/Debug/bin/SPI_USB.map" path="SPI_USB/Debug/bin/SPI_USB.map" type="1"/>
+    <File name="SPI_USB/SPI_USB.elf.xcodeproj/project.pbxproj" path="SPI_USB/SPI_USB.elf.xcodeproj/project.pbxproj" type="1"/>
     <File name="Drivers" path="" type="2"/>
     <File name="cmsis_boot/startup" path="" type="2"/>
     <File name="Drivers/CMSIS/Device/ST" path="" type="2"/>

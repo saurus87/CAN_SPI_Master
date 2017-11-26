@@ -130,7 +130,7 @@ int main(void)
 
   /* USER CODE BEGIN 3 */
 
-/*	  HAL_SPI_TransmitReceive(&hspi1,data_tranc,data_rec,8,1000);
+	//  HAL_SPI_TransmitReceive(&hspi1,data_tranc,data_rec,8,1000);
 
 //	  HAL_SPI_Transmit(&hspi1,(uint8_t*)data_tranc,8,1000);
 //	  HAL_Delay(200);
@@ -138,7 +138,7 @@ int main(void)
 	  HAL_SPI_Receive(&hspi1,data_rec,8,1000);
 
 //	  HAL_Delay(200);
-  if (data_rec[1]==2) {
+  if ((data_rec[1]==0xFF)|(data_rec[0]==0xFF)) {
 		  HAL_Delay(200);
 		  HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,GPIO_PIN_SET);//down diode
 	  }
@@ -148,22 +148,22 @@ int main(void)
   	  	  	  HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
 		  }
 
-*/
 
-	  HAL_Delay(5000);
-	  while (1){
+
+//	  HAL_Delay(5000);
+/*	  while (1){
 		  HAL_Delay(100);
 		  CDC_add_buf_to_transmit();
 	  }
-
+*/
 
 //	  CDC_Transmit_FS(&tranc,strlen(tranc));
 
-  for (i=0;i<=7;i++){
+/*  for (i=0;i<=7;i++){
 	  data_rec[i]=i+1;
 	  HAL_Delay(1000);
-	  intchar[i]=(char)data_tranc[i];
-
+	  intchar[i]=(char)data_tranc[i]
+*/
 //	  CDC_Transmit_FS(data_tranc,strlen(data_tranc));
 
 //	  CDC_Transmit_FS(&str_tx,strlen(str_tx));
@@ -174,12 +174,9 @@ int main(void)
 //	  CDC_Transmit_FS(12,8);
 	  HAL_Delay(1000);
 //	  CDC_Transmit_FS((unsigned char*)str_tx, strlen(str_tx));
-	  HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+//	  HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
   }
 
-
-
-  }
   /* USER CODE END 3 */
 
 }
